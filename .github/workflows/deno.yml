@@ -1,0 +1,57 @@
+name: Deno
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  delete:
+    name: 🗑️ Delete old files
+    runs-on: ubuntu-latest
+    permissions: write-all
+    if: ${{ github.ref == 'refs/heads/main' }}
+
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v5
+
+      - name: Setup Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Create env file
+        run: |
+          touch .env
+          echo HOSTNAME=${{ secrets.HOSTNAME }} >> .env
+          echo USER_APIKEY=${{ secrets.USER_APIKEY }} >> .env
+          echo PTE_PANEL_ID=${{ secrets.PTE_PANEL_ID }} >> .env
+
+      - name: Delete old files
+        run: deno run --allow-all --env-file scripts/delete_dir.ts --root=./ --files=src
+
+  deploy:
+    name: 🚀 Deploy & Restart
+    permissions: write-all
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/main' }}
+    needs: [delete]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Compress src directory
+        run: zip -r root.zip ./
+
+      - uses: rexlmanu/pterodactyl-upload-action@v2.5
+        with:
+          panel-host: ${{ secrets.HOSTNAME }}
+          api-key: ${{ secrets.USER_APIKEY }}
+          server-id: ${{ secrets.PTE_PANEL_ID }}
+          source: root.zip
+          target: "./"
+          restart: true
+          decompress-target: true

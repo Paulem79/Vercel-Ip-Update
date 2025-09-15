@@ -1,0 +1,190 @@
+{
+  "version": "5",
+  "specifiers": {
+    "npm:@vercel/sdk@*": "1.11.1",
+    "npm:public-ip@*": "7.0.1"
+  },
+  "npm": {
+    "@leichtgewicht/ip-codec@2.0.5": {
+      "integrity": "sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw=="
+    },
+    "@sindresorhus/is@5.6.0": {
+      "integrity": "sha512-TV7t8GKYaJWsn00tFDqBw8+Uqmr8A0fRU1tvTQhyZzGv0sJCGRQL3JGMI3ucuKo3XIZdUP+Lx7/gh2t3lewy7g=="
+    },
+    "@szmarczak/http-timer@5.0.1": {
+      "integrity": "sha512-+PmQX0PiAYPMeVYe237LJAYvOMYW1j2rH5YROyS3b4CTVJum34HfRvKvAzozHAQG0TnHNdUfY9nCeUyRAs//cw==",
+      "dependencies": [
+        "defer-to-connect"
+      ]
+    },
+    "@types/http-cache-semantics@4.0.4": {
+      "integrity": "sha512-1m0bIFVc7eJWyve9S0RnuRgcQqF/Xd5QsUZAZeQFr1Q3/p9JWoQQEqmVy+DPTNpGXwhgIetAoYF8JSc33q29QA=="
+    },
+    "@vercel/sdk@1.11.1": {
+      "integrity": "sha512-xnwU8ktB37eJ1sa/nz6sT4d6/3XyPYit1tSfVz69FzeM818bMEewH8yLmuCpmpERIJtq94MlqXm3X4uJVV3Pcw==",
+      "dependencies": [
+        "zod"
+      ],
+      "bin": true
+    },
+    "cacheable-lookup@7.0.0": {
+      "integrity": "sha512-+qJyx4xiKra8mZrcwhjMRMUhD5NR1R8esPkzIYxX96JiecFoxAXFuz/GpR3+ev4PE1WamHip78wV0vcmPQtp8w=="
+    },
+    "cacheable-request@10.2.14": {
+      "integrity": "sha512-zkDT5WAF4hSSoUgyfg5tFIxz8XQK+25W/TLVojJTMKBaxevLBBtLxgqguAuVQB8PVW79FVjHcU+GJ9tVbDZ9mQ==",
+      "dependencies": [
+        "@types/http-cache-semantics",
+        "get-stream",
+        "http-cache-semantics",
+        "keyv",
+        "mimic-response@4.0.0",
+        "normalize-url",
+        "responselike"
+      ]
+    },
+    "clone-regexp@3.0.0": {
+      "integrity": "sha512-ujdnoq2Kxb8s3ItNBtnYeXdm07FcU0u8ARAT1lQ2YdMwQC+cdiXX8KoqMVuglztILivceTtp4ivqGSmEmhBUJw==",
+      "dependencies": [
+        "is-regexp"
+      ]
+    },
+    "convert-hrtime@5.0.0": {
+      "integrity": "sha512-lOETlkIeYSJWcbbcvjRKGxVMXJR+8+OQb/mTPbA4ObPMytYIsUbuOE0Jzy60hjARYszq1id0j8KgVhC+WGZVTg=="
+    },
+    "decompress-response@6.0.0": {
+      "integrity": "sha512-aW35yZM6Bb/4oJlZncMH2LCoZtJXTRxES17vE3hoRiowU2kWHaJKFkSBDnDR+cm9J+9QhXmREyIfv0pji9ejCQ==",
+      "dependencies": [
+        "mimic-response@3.1.0"
+      ]
+    },
+    "defer-to-connect@2.0.1": {
+      "integrity": "sha512-4tvttepXG1VaYGrRibk5EwJd1t4udunSOVMdLSAL6mId1ix438oPwPZMALY41FCijukO1L0twNcGsdzS7dHgDg=="
+    },
+    "dns-packet@5.6.1": {
+      "integrity": "sha512-l4gcSouhcgIKRvyy99RNVOgxXiicE+2jZoNmaNmZ6JXiGajBOJAesk1OBlJuM5k2c+eudGdLxDqXuPCKIj6kpw==",
+      "dependencies": [
+        "@leichtgewicht/ip-codec"
+      ]
+    },
+    "dns-socket@4.2.2": {
+      "integrity": "sha512-BDeBd8najI4/lS00HSKpdFia+OvUMytaVjfzR9n5Lq8MlZRSvtbI+uLtx1+XmQFls5wFU9dssccTmQQ6nfpjdg==",
+      "dependencies": [
+        "dns-packet"
+      ]
+    },
+    "form-data-encoder@2.1.4": {
+      "integrity": "sha512-yDYSgNMraqvnxiEXO4hi88+YZxaHC6QKzb5N84iRCTDeRO7ZALpir/lVmf/uXUhnwUr2O4HU8s/n6x+yNjQkHw=="
+    },
+    "function-timeout@0.1.1": {
+      "integrity": "sha512-0NVVC0TaP7dSTvn1yMiy6d6Q8gifzbvQafO46RtLG/kHJUBNd+pVRGOBoK44wNBvtSPUJRfdVvkFdD3p0xvyZg=="
+    },
+    "get-stream@6.0.1": {
+      "integrity": "sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg=="
+    },
+    "got@13.0.0": {
+      "integrity": "sha512-XfBk1CxOOScDcMr9O1yKkNaQyy865NbYs+F7dr4H0LZMVgCj2Le59k6PqbNHoL5ToeaEQUYh6c6yMfVcc6SJxA==",
+      "dependencies": [
+        "@sindresorhus/is",
+        "@szmarczak/http-timer",
+        "cacheable-lookup",
+        "cacheable-request",
+        "decompress-response",
+        "form-data-encoder",
+        "get-stream",
+        "http2-wrapper",
+        "lowercase-keys",
+        "p-cancelable",
+        "responselike"
+      ]
+    },
+    "http-cache-semantics@4.2.0": {
+      "integrity": "sha512-dTxcvPXqPvXBQpq5dUr6mEMJX4oIEFv6bwom3FDwKRDsuIjjJGANqhBuoAn9c1RQJIdAKav33ED65E2ys+87QQ=="
+    },
+    "http2-wrapper@2.2.1": {
+      "integrity": "sha512-V5nVw1PAOgfI3Lmeaj2Exmeg7fenjhRUgz1lPSezy1CuhPYbgQtbQj4jZfEAEMlaL+vupsvhjqCyjzob0yxsmQ==",
+      "dependencies": [
+        "quick-lru",
+        "resolve-alpn"
+      ]
+    },
+    "ip-regex@5.0.0": {
+      "integrity": "sha512-fOCG6lhoKKakwv+C6KdsOnGvgXnmgfmp0myi3bcNwj3qfwPAxRKWEuFhvEFF7ceYIz6+1jRZ+yguLFAmUNPEfw=="
+    },
+    "is-ip@5.0.1": {
+      "integrity": "sha512-FCsGHdlrOnZQcp0+XT5a+pYowf33itBalCl+7ovNXC/7o5BhIpG14M3OrpPPdBSIQJCm+0M5+9mO7S9VVTTCFw==",
+      "dependencies": [
+        "ip-regex",
+        "super-regex"
+      ]
+    },
+    "is-regexp@3.1.0": {
+      "integrity": "sha512-rbku49cWloU5bSMI+zaRaXdQHXnthP6DZ/vLnfdSKyL4zUzuWnomtOEiZZOd+ioQ+avFo/qau3KPTc7Fjy1uPA=="
+    },
+    "json-buffer@3.0.1": {
+      "integrity": "sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ=="
+    },
+    "keyv@4.5.4": {
+      "integrity": "sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==",
+      "dependencies": [
+        "json-buffer"
+      ]
+    },
+    "lowercase-keys@3.0.0": {
+      "integrity": "sha512-ozCC6gdQ+glXOQsveKD0YsDy8DSQFjDTz4zyzEHNV5+JP5D62LmfDZ6o1cycFx9ouG940M5dE8C8CTewdj2YWQ=="
+    },
+    "mimic-response@3.1.0": {
+      "integrity": "sha512-z0yWI+4FDrrweS8Zmt4Ej5HdJmky15+L2e6Wgn3+iK5fWzb6T3fhNFq2+MeTRb064c6Wr4N/wv0DzQTjNzHNGQ=="
+    },
+    "mimic-response@4.0.0": {
+      "integrity": "sha512-e5ISH9xMYU0DzrT+jl8q2ze9D6eWBto+I8CNpe+VI+K2J/F/k3PdkdTdz4wvGVH4NTpo+NRYTVIuMQEMMcsLqg=="
+    },
+    "normalize-url@8.1.0": {
+      "integrity": "sha512-X06Mfd/5aKsRHc0O0J5CUedwnPmnDtLF2+nq+KN9KSDlJHkPuh0JUviWjEWMe0SW/9TDdSLVPuk7L5gGTIA1/w=="
+    },
+    "p-cancelable@3.0.0": {
+      "integrity": "sha512-mlVgR3PGuzlo0MmTdk4cXqXWlwQDLnONTAg6sm62XkMJEiRxN3GL3SffkYvqwonbkJBcrI7Uvv5Zh9yjvn2iUw=="
+    },
+    "public-ip@7.0.1": {
+      "integrity": "sha512-DdNcqcIbI0wEeCBcqX+bmZpUCvrDMJHXE553zgyG1MZ8S1a/iCCxmK9iTjjql+SpHSv4cZkmRv5/zGYW93AlCw==",
+      "dependencies": [
+        "dns-socket",
+        "got",
+        "is-ip"
+      ]
+    },
+    "quick-lru@5.1.1": {
+      "integrity": "sha512-WuyALRjWPDGtt/wzJiadO5AXY+8hZ80hVpe6MyivgraREW751X3SbhRvG3eLKOYN+8VEvqLcf3wdnt44Z4S4SA=="
+    },
+    "resolve-alpn@1.2.1": {
+      "integrity": "sha512-0a1F4l73/ZFZOakJnQ3FvkJ2+gSTQWz/r2KE5OdDY0TxPm5h4GkqkWWfM47T7HsbnOtcJVEF4epCVy6u7Q3K+g=="
+    },
+    "responselike@3.0.0": {
+      "integrity": "sha512-40yHxbNcl2+rzXvZuVkrYohathsSJlMTXKryG5y8uciHv1+xDLHQpgjG64JUO9nrEq2jGLH6IZ8BcZyw3wrweg==",
+      "dependencies": [
+        "lowercase-keys"
+      ]
+    },
+    "super-regex@0.2.0": {
+      "integrity": "sha512-WZzIx3rC1CvbMDloLsVw0lkZVKJWbrkJ0k1ghKFmcnPrW1+jWbgTkTEWVtD9lMdmI4jZEz40+naBxl1dCUhXXw==",
+      "dependencies": [
+        "clone-regexp",
+        "function-timeout",
+        "time-span"
+      ]
+    },
+    "time-span@5.1.0": {
+      "integrity": "sha512-75voc/9G4rDIJleOo4jPvN4/YC4GRZrY8yy1uU4lwrB3XEQbWve8zXoO5No4eFrGcTAMYyoY67p8jRQdtA1HbA==",
+      "dependencies": [
+        "convert-hrtime"
+      ]
+    },
+    "zod@3.25.76": {
+      "integrity": "sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ=="
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@std/assert@1"
+    ]
+  }
+}
